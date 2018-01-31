@@ -1,0 +1,373 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700&amp;subset=latin-ext")
+
+@import "sass/variables"
+@import "sass/animations"
+@import "sass/mixins"
+@import "sass/typography"
+@import "sass/utilities"
+@import "sass/media"
+
+*,
+*::after,
+*::before
+    padding: 0
+    margin: 0
+
+html 
+    font-size: 62.5%
+
+body 
+    box-sizing: border-box
+    margin: 0
+    padding: 0
+    background-color: $black-color
+    font-family: $main-font
+    overflow: auto !important
+
+.header
+    position: relative
+    padding: 0
+    margin: 0
+    .navbar
+        padding: 2rem 0 0
+        background-color: $black-color
+        &-brand
+            width: 5rem
+            padding-bottom: 1rem
+        .nav-item
+            &:not(:last-child)
+                margin-right: .5rem 
+            .nav-link
+                color: $white-color
+                font-size: 1.4rem
+                font-weight: 700
+                line-height: 1.8rem
+                text-transform: uppercase
+                padding-bottom: 4rem
+                border-bottom: .5rem solid $black-color
+                transition: .5s
+                &:hover
+                    border-bottom: .5rem solid $gold-color
+                    color: $lightblue-color
+    &__back
+        height: 85vh
+        &--img
+            background-color: $dark-color
+            background-position: center
+            background-size: cover
+            height: 85vh
+            &:first-child
+                background-image: url("images/Back1.png")
+            &:nth-child(2)
+                background-image: linear-gradient(to right, rgba($black-color, 0.7), rgba($black-color, 0.7)), url("images/Back2.png")
+            &:last-child
+                background-image: linear-gradient(to right, rgba($black-color, 0.7), rgba($black-color, 0.7)), url("images/Back3.png")
+
+    &__main
+        .number
+            text-transform: uppercase
+            color: $white-color
+            font-size: 2.4rem
+            font-weight: 600
+            line-height: 1.8rem
+            padding: 2rem 0 4rem
+            animation-delay: 1s
+        .button
+            animation-delay: 1.1s
+
+.phone 
+	&__button 
+        z-index: 1000
+        border-radius: 50%
+        background-color: $gold-color
+        box-shadow: 1px 3px 8px 0px rgba($black-color, 0.24)
+        width: 6.5rem
+        height: 6.5rem
+        cursor: pointer
+        position: fixed
+        bottom: 50px
+        right: 50px
+
+.about 
+    background-color: $lightblue-color
+    &__text
+        color: $dark-color
+        font-size: 1.4rem
+        font-weight: 300
+        line-height: 2.5rem
+    &__video
+        box-shadow: 6px 11px 24px 0px rgba($black-color, 0.42)
+        height: 27.5rem
+
+.services
+    .heading-secondary
+        &--main
+            color: $white-color
+    &__box
+        padding: 2.5rem
+        border-right: 2px solid $share-color
+        &:first-child
+            border-left: 2px solid $share-color
+        &--img 
+            width: 6rem
+            height: 6rem
+            margin-bottom: 3rem
+        &--text
+            color: $placeholder-color
+            font-size: 1.2rem
+            font-weight: 300
+            line-height: 2.1rem
+
+.projects
+    background-color: $lightblue-color
+    &__box
+        &--pills
+            border: 1px solid $lightgrey-color
+            background-color: $mediumblue-color
+            border-radius: 30px
+            line-height: 4rem
+            padding: 0 1.5rem
+            color: $black-color
+            font-size: 1.4rem
+            font-weight: 300
+            width: 65rem
+            .nav-item
+                padding: 0 .5rem
+                &:not(:last-child)
+                    border-right: 1px solid $lightgrey-color
+                .nav-link
+                    color: $black-color
+                    padding: 0 2rem
+                .active
+                    border-bottom: .5rem solid $gold-color
+                    background-color: transparent 
+        .active
+            display: flex
+            flex-wrap: wrap
+            justify-content: center
+        .project
+            &__card
+                width: 25rem
+                margin: 1rem
+                position: relative
+                &--hover
+                    display: none
+                    height: 100%
+                    position: absolute
+                    background-color: rgba($dark-color, .7)
+                    top: 0
+                    .text
+                        color: $white-color
+                        font-size: 1.2rem
+                        font-weight: 300
+                        line-height: 3rem
+                        padding: 0 1.5rem
+                &:hover
+                    .project__card--hover
+                        display: flex
+
+.clients
+    background-color: $lightblue-color
+    &__img
+        width: 15rem
+        height: 15rem
+        margin-bottom: 2rem
+    &__position
+        text-transform: none
+    &__quote
+        width: 2.7rem
+        height: 2rem
+    &__talk
+        color: $share-color
+        font-size: 1.4rem
+        font-weight: 300
+        line-height: 2.5rem
+        padding: 2rem 8rem 6rem
+    .premuim-heading
+        text-transform: none
+.logo
+    background-color: $white-color
+    border: 1px solid $lightgrey-color
+    &__img
+        display: flex
+        justify-content: space-between
+        flex-wrap: wrap
+        line-height: 5.9rem
+
+.price
+    background-color: $mediumblue-color
+    border: 1px solid $lightgrey-color
+    &__box
+        display: flex
+        flex-wrap: wrap
+        justify-content: space-around
+        &--element
+            padding: 2rem 4.5rem 
+            background-color: $white-color
+            margin: 1rem
+            text-align: center
+            .amount
+                &__number
+                    color: $dark-color
+                    font-size: 3rem
+                    font-weight: 700
+                    line-height: 2.1rem
+                    display: block
+                    margin-top: 1rem
+                &__month
+                    color: $grey-color
+                    font-size: 1rem
+                    font-weight: 400
+                    line-height: 2.5rem
+            .benefits
+                li  
+                    list-style-type: none
+                    color: $placeholder-color
+                    font-size: 1rem
+                    font-weight: 400
+                    line-height: 1.3rem
+                    position: relative
+                    padding: 1rem 0
+                    @include bottom-line
+                    &::after
+                        width: 1.6rem
+                        left: calc(50% - .8rem)
+                        top: 3rem
+                        border-bottom: 1px solid $placeholder-color
+            .btn
+                width: 10rem
+                margin: 0 auto
+
+.premium
+    background-color: $white-color
+    .carousel-indicators
+            bottom: -4rem
+    .button
+        margin-top: 3rem
+    &__box
+        border-bottom: 1px solid $share-color
+        padding: 2rem
+        &--text
+            color: $grey-color
+            font-size: 1.4rem
+            font-weight: 300
+            line-height: 2.5rem
+        &--list
+            @extend .premium__box--text
+            line-height: 3rem
+            text-transform: uppercase
+            list-style-type: none
+            position: relative
+            margin-left: 2rem
+            li:before
+                content: "\2014"
+                margin-left: -2rem
+                position: absolute
+
+        
+
+
+.facts
+    position: relative
+    .heading-secondary
+        &--main
+            color: $white-color
+    &__number
+        color: $gold-color
+        font-size: 4.8rem
+        font-weight: 700
+        line-height: 2.8rem
+        padding-bottom: 2rem
+        @include bottom-line
+        &::after
+            top: 4.5rem
+    &__title
+        text-transform: uppercase
+        color: $white-color
+        padding: 1rem 0
+        font-size: 1.6rem
+        height: 5rem
+        font-weight: 700
+    &__text
+        color: $lightgrey-color
+        font-size: 1.2rem
+        font-weight: 300
+        line-height: 2.1rem
+        padding: 0 2rem
+
+.share
+    border: 1px solid $lightgrey-color
+    background-color: $light-color
+    &__box
+        display: flex
+        justify-content: center
+        &--tell
+            color: $share-color
+            .icon-share
+                font-size: 2.5rem
+                height: 2.5rem
+                line-height: 4.3rem
+            .tell-share
+                font-size: 1.4rem
+                font-weight: 600
+                text-align: left
+                text-transform: uppercase
+        &--icon
+            padding: .5rem
+            .socialicon
+                margin-left: 3rem
+                &:first-child
+                    background-color: $twitter-color
+                &:nth-child(3)
+                    background-color: $linkedin-color
+                &:nth-child(5)
+                    background-color: $facebook-color
+                &:nth-child(7)
+                    background-color: $google-color
+                &:nth-child(9)
+                    background-color: $pinterest-color
+                &:hover
+                    background-color: $gold-color
+            .number
+                color: $grey-color
+                font-size: 1rem
+                font-weight: 700
+                line-height: 2.5rem
+
+.contact
+    background-color: $mediumblue-color
+    &__form 
+        margin: 0 auto
+        height: 30rem
+        width: 45%
+    &__map
+        position: relative
+        .map 
+            filter: grayscale(100%)
+        .adress
+            width: 40%
+            background-color: $white-color
+            position: absolute
+            top: 20px
+            right: 50%
+            
+.footer
+    &__socjals
+        &--icon
+            background-color: rgba($white-color, .2)
+    &__brand
+        color: $white-color
+        font-size: 1.4rem
+        font-weight: 400
+        line-height: 2.5rem
+        text-transform: uppercase
+    &__text
+        color: $lightgrey-color
+        font-size: 1.2rem
+        font-weight: 300
+        line-height: 2.1rem
+    &__form
+        border-radius: 3px
+        background-color: rgba($white-color, .2)
+        .form-control:placeholder-shown
+            text-align: center

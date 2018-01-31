@@ -1,0 +1,849 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>AWAX</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="fontello-b098d557/css/fontello.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <header class="header jumbotron" id="header">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">
+                    <img class="img-fluid" src="images/Logo.png" alt="Golden logo">
+                </a>
+                <button class="navbar-toggler navbar-btn" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto text-center">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="#">home
+                                <span class="sr-only">(current)</span>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">about us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">our projects</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">our team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">happy clients</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">price</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">some facts</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">contact us</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+        <div id="carouselIndicators" class="header__back carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner">
+                <div class="carousel-item header__back--img active">
+                </div>
+                <div class="carousel-item header__back--img">
+                </div>
+                <div class="carousel-item header__back--img">
+                </div>
+            </div>
+        </div>
+        <div class="header__main container flex-centering absolute-position">
+            <h1 class="heading-primary animate-pop-in">
+                <span class="heading-primary--main animate-pop-in">design is about</span>
+                <span class="heading-primary--sub animate-pop-in">communi&shy;cation</span>
+            </h1>
+            <p class="number auto-margin animate-pop-in">call us: +00 0 1234 5678</p>
+            <div class="button auto-margin animate-pop-in">
+                <a href="#" class="btn flex-centering">get in touch</a>
+            </div>
+        </div>
+    </header>
+    <div class="phone">
+		<button type="button" class="phone__button animate-pulse" data-toggle="modal" data-target="#phoneModal"><img src="images/Telephone.png" alt="telephone"/></button>
+		<div class="modal fade" id="phoneModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+			<div class="modal-dialog" role="document">
+    			<div class="modal-content">
+      				<div class="modal-body">
+                        <form>
+                            <div class="form-row">
+                                <div class="col-sm-12">
+                                    <input type="text" class="form-control" placeholder="Name">
+                                </div>
+                                <div class="col-sm-12">
+                                    <input type="phone" class="form-control" placeholder="+00 0 1234 5678">
+                                </div>
+                            </div>
+                        </form>
+                        <div class="button small-padding" data-dismiss="modal">
+                            <button class="btn">call me back</button>
+                        </div>
+      				</div>
+    			</div>
+  			</div>
+		</div>
+	</div>
+    <section class="about">
+        <div class="container medium-padding">
+            <h2 class="heading-secondary">
+                <span class="heading-secondary--main">about us</span>
+                <span class="heading-secondary--sub">who we are?</span>
+            </h2>
+            <div class="row">
+                <div class="col-md-6 col-sm-12">
+                    <p class="about__text small-bpadding">Praesent metus urna, feugiat a placerat vel, elementum at leo. Quisque vel fermentum ipsum. Nulla at facilisis
+                        est, vel condimentum ligula. Mauris volutpat vitae risus sed pellentesque. Praesent fermrntum neque ac tellus
+                        gravida, at varius sem accumsan. Nam porta erat id sapien consectetur. Fusce sed purus eros. Vivamus rhoncus,
+                        ipsum in tempus fermentum, orci leo facilisi purus. Nam porta erat id sapien consectetur. Fusce sed purus
+                        eros. Vivamus rhoncus, ipsum in tempus fermentum, orci leo facilicic purus.</p>
+                    <div class="button auto-margin">
+                        <a href="#" class="btn flex-centering">learn more</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                    <video class="about__video" width="100%" height="100%" poster="images/Video.png" preload="none" onclick="this.play();">
+                        <source src="/videos/Keyboard.mp4" type="video/mp4"> Sorry! Your browser does not support the video tag.
+                    </video>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="services">
+        <div class="container medium-padding">
+            <h2 class="heading-secondary">
+                <span class="heading-secondary--main">services</span>
+                <span class="heading-secondary--sub">services that we provide</span>
+            </h2>
+            <div class="row">
+                <div class="col-md-3 col-sm-12 services__box text-center">
+                    <img class="services__box--img img-fluid animate-shake" src="images/Quality.png" alt="">
+                    <h3 class="heading-thertiary">high quality design</h3>
+                    <p class="services__box--text">Praesent metus urna, feugiata placerat elementum</p>
+                </div>
+                <div class="col-md-3 col-sm-12 services__box text-center">
+                    <img class="services__box--img img-fluid animate-shake" src="images/Star.png" alt="">
+                    <h3 class="heading-thertiary">modern design</h3>
+                    <p class="services__box--text">Praesent metus urna, feugiata placerat elementum</p>
+                </div>
+                <div class="col-md-3 col-sm-12 services__box text-center">
+                    <img class="services__box--img img-fluid animate-shake" src="images/Clock.png" alt="">
+                    <h3 class="heading-thertiary">regular updates</h3>
+                    <p class="services__box--text">Praesent metus urna, feugiata</p>
+                </div>
+                <div class="col-md-3 col-sm-12 services__box text-center">
+                    <img class="services__box--img img-fluid animate-shake" src="images/Support.png" alt="">
+                    <h3 class="heading-thertiary">fast and free support</h3>
+                    <p class="services__box--text">Praesent metus urna, feugiata placerat elementum</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="projects">
+        <div class="container medium-padding text-center">
+            <h2 class="heading-secondary">
+                <span class="heading-secondary--main">our projects</span>
+                <span class="heading-secondary--sub">what we create</span>
+            </h2>
+            <div class="projects__box">
+                <ul class="nav nav-pills mb-3 projects__box--pills auto-margin" id="pills-tab" role="tablist">
+                    <li class="nav-item">
+                        <a class="nav-link active" id="pills-all-tab" data-toggle="pill" href="#pills-all" role="tab" aria-controls="pills-all" aria-selected="true">All</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-photos-tab" data-toggle="pill" href="#pills-photos" role="tab" aria-controls="pills-photos" aria-selected="false">Photos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-branding-tab" data-toggle="pill" href="#pills-branding" role="tab" aria-controls="pills-branding" aria-selected="false">Branding</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-adverts-tab" data-toggle="pill" href="#pills-adverts" role="tab" aria-controls="pills-adverts" aria-selected="false">Adverts</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-development-tab" data-toggle="pill" href="#pills-development" role="tab" aria-controls="pills-development" aria-selected="false">Development</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" id="pills-misc-tab" data-toggle="pill" href="#pills-misc" role="tab" aria-controls="pills-misc"
+                            aria-selected="false">Misc</a>
+                    </li>
+                </ul>
+                <div class="tab-content" id="pills-tabContent">
+                    <div class="tab-pane fade show active project" id="pills-all" role="tabpanel" aria-labelledby="pills-all-tab">
+                        <div class="project__card">
+                            <img class="img-fluid" src="images/Img1.png" alt="">
+                            <div class="project__card--hover flex-centering">
+                                <h4 class="heading-thertiary">about</h4>
+                                <p class="text">Praesent metus urna, feugiat a placerat elementum at leo.</p>
+                            </div>
+                        </div>
+                        <div class="project__card">
+                            <img class="img-fluid" src="images/Img2.png" alt="">
+                            <div class="project__card--hover flex-centering">
+                                <h4 class="heading-thertiary">about</h4>
+                                <p class="text">Praesent metus urna, feugiat a placerat elementum at leo.</p>
+                            </div>
+                        </div>
+                        <div class="project__card">
+                            <img class="img-fluid" src="images/Img3.png" alt="">
+                            <div class="project__card--hover flex-centering">
+                                <h4 class="heading-thertiary">about</h4>
+                                <p class="text">Praesent metus urna, feugiat a placerat elementum at leo.</p>
+                            </div>
+                        </div>
+                        <div class="project__card">
+                            <img class="img-fluid" src="images/Img4.png" alt="">
+                            <div class="project__card--hover flex-centering">
+                                <h4 class="heading-thertiary">about</h4>
+                                <p class="text">Praesent metus urna, feugiat a placerat elementum at leo.</p>
+                            </div>
+                        </div>
+                        <div class="project__card">
+                            <img class="img-fluid" src="images/Img5.png" alt="">
+                            <div class="project__card--hover flex-centering">
+                                <h4 class="heading-thertiary">about</h4>
+                                <p class="text">Praesent metus urna, feugiat a placerat elementum at leo.</p>
+                            </div>
+                        </div>
+                        <div class="project__card">
+                            <img class="img-fluid" src="images/Img6.png" alt="">
+                            <div class="project__card--hover flex-centering">
+                                <h4 class="heading-thertiary">about</h4>
+                                <p class="text">Praesent metus urna, feugiat a placerat elementum at leo.</p>
+                            </div>
+                        </div>
+                        <div class="project__card">
+                            <img class="img-fluid" src="images/Img7.png" alt="">
+                            <div class="project__card--hover flex-centering">
+                                <h4 class="heading-thertiary">about</h4>
+                                <p class="text">Praesent metus urna, feugiat a placerat elementum at leo.</p>
+                            </div>
+                        </div>
+                        <div class="project__card">
+                            <img class="img-fluid" src="images/Img8.png" alt="">
+                            <div class="project__card--hover flex-centering">
+                                <h4 class="heading-thertiary">about</h4>
+                                <p class="text">Praesent metus urna, feugiat a placerat elementum at leo.</p>
+                            </div>
+                        </div>
+                        <div class="project__card">
+                            <img class="img-fluid" src="images/Img9.png" alt="">
+                            <div class="project__card--hover flex-centering">
+                                <h4 class="heading-thertiary">about</h4>
+                                <p class="text">Praesent metus urna, feugiat a placerat elementum at leo.</p>
+                            </div>
+                        </div>
+                        <div class="project__card">
+                            <img class="img-fluid" src="images/Img10.png" alt="">
+                            <div class="project__card--hover flex-centering">
+                                <h4 class="heading-thertiary">about</h4>
+                                <p class="text">Praesent metus urna, feugiat a placerat elementum at leo.</p>
+                            </div>
+                        </div>
+                        <div class="project__card">
+                            <img class="img-fluid" src="images/Img11.png" alt="">
+                            <div class="project__card--hover flex-centering">
+                                <h4 class="heading-thertiary">about</h4>
+                                <p class="text">Praesent metus urna, feugiat a placerat elementum at leo.</p>
+                            </div>
+                        </div>
+                        <div class="project__card">
+                            <img class="img-fluid" src="images/Img12.png" alt="">
+                            <div class="project__card--hover flex-centering">
+                                <h4 class="heading-thertiary">about</h4>
+                                <p class="text">Praesent metus urna, feugiat a placerat elementum at leo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-photos" role="tabpanel" aria-labelledby="pills-photos-tab">
+                        <div class="project__card">
+                            <img class="img-fluid" src="images/Img1.png" alt="">
+                            <div class="project__card--hover flex-centering">
+                                <h4 class="heading-thertiary">about</h4>
+                                <p class="text">Praesent metus urna, feugiat a placerat elementum at leo.</p>
+                            </div>
+                        </div>
+                        <div class="project__card">
+                            <img class="img-fluid" src="images/Img2.png" alt="">
+                            <div class="project__card--hover flex-centering">
+                                <h4 class="heading-thertiary">about</h4>
+                                <p class="text">Praesent metus urna, feugiat a placerat elementum at leo.</p>
+                            </div>
+                        </div>
+                        <div class="project__card">
+                            <img class="img-fluid" src="images/Img3.png" alt="">
+                            <div class="project__card--hover flex-centering">
+                                <h4 class="heading-thertiary">about</h4>
+                                <p class="text">Praesent metus urna, feugiat a placerat elementum at leo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade project" id="pills-branding" role="tabpanel" aria-labelledby="pills-branding-tab">
+                        <div class="project__card">
+                            <img class="img-fluid" src="images/Img12.png" alt="">
+                            <div class="project__card--hover flex-centering">
+                                <h4 class="heading-thertiary">about</h4>
+                                <p class="text">Praesent metus urna, feugiat a placerat elementum at leo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-adverts" role="tabpanel" aria-labelledby="pills-adverts-tab">
+                        <div class="project__card">
+                            <img class="img-fluid" src="images/Img4.png" alt="">
+                            <div class="project__card--hover flex-centering">
+                                <h4 class="heading-thertiary">about</h4>
+                                <p class="text">Praesent metus urna, feugiat a placerat elementum at leo.</p>
+                            </div>
+                        </div>
+                        <div class="project__card">
+                            <img class="img-fluid" src="images/Img5.png" alt="">
+                            <div class="project__card--hover flex-centering">
+                                <h4 class="heading-thertiary">about</h4>
+                                <p class="text">Praesent metus urna, feugiat a placerat elementum at leo.</p>
+                            </div>
+                        </div>
+                        <div class="project__card">
+                            <img class="img-fluid" src="images/Img6.png" alt="">
+                            <div class="project__card--hover flex-centering">
+                                <h4 class="heading-thertiary">about</h4>
+                                <p class="text">Praesent metus urna, feugiat a placerat elementum at leo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-development" role="tabpanel" aria-labelledby="pills-development-tab">
+                        <div class="project__card">
+                            <img class="img-fluid" src="images/Img9.png" alt="">
+                            <div class="project__card--hover flex-centering">
+                                <h4 class="heading-thertiary">about</h4>
+                                <p class="text">Praesent metus urna, feugiat a placerat elementum at leo.</p>
+                            </div>
+                        </div>
+                        <div class="project__card">
+                            <img class="img-fluid" src="images/Img10.png" alt="">
+                            <div class="project__card--hover flex-centering">
+                                <h4 class="heading-thertiary">about</h4>
+                                <p class="text">Praesent metus urna, feugiat a placerat elementum at leo.</p>
+                            </div>
+                        </div>
+                        <div class="project__card">
+                            <img class="img-fluid" src="images/Img11.png" alt="">
+                            <div class="project__card--hover flex-centering">
+                                <h4 class="heading-thertiary">about</h4>
+                                <p class="text">Praesent metus urna, feugiat a placerat elementum at leo.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="pills-misc" role="tabpanel" aria-labelledby="pills-misc-tab">
+                        <div class="project__card">
+                            <img class="img-fluid" src="images/Img6.png" alt="">
+                            <div class="project__card--hover flex-centering">
+                                <h4 class="heading-thertiary">about</h4>
+                                <p class="text">Praesent metus urna, feugiat a placerat elementum at leo.</p>
+                            </div>
+                        </div>
+                        <div class="project__card">
+                            <img class="img-fluid" src="images/Img7.png" alt="">
+                            <div class="project__card--hover flex-centering">
+                                <h4 class="heading-thertiary">about</h4>
+                                <p class="text">Praesent metus urna, feugiat a placerat elementum at leo.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="button small-padding">
+                <a href="#" class="btn flex-centering auto-margin">more projects</a>
+            </div>
+        </div>
+    </section>
+    <section class="team">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 cols-sm-12">
+    
+                </div>
+                <div class="col-md-4 cols-sm-12">
+    
+                </div>
+                <div class="col-md-4 cols-sm-12">
+    
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="clients medium-padding">
+        <div class="container">
+            <h2 class="heading-secondary">
+                <span class="heading-secondary--main">Happy clients</span>
+                <span class="heading-secondary--sub">Client reviews</span>
+            </h2>
+            <div id="clienstsIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#clientsIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#clientsIndicators" data-slide-to="1"></li>
+                    <li data-target="#clientsIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner text-center">
+                    <div class="carousel-item active">
+                        <div class="flex-centering">
+                            <img class="clients__img auto-margin" src="images/Img_client.png" alt="">
+                            <h4 class="premuim-heading">John Doe</h4>
+                            <h5 class="heading-quaternary clients__position small-bpadding">Head of PR Departament</h5>
+                            <img class="clients__quote auto-margin" src="images/quotes.png" alt="">
+                            <p class="clients__talk">Praesent metus urna, feugiat a placerat vel, elementum at leo. Quisque vel fermentum ipsum. Nulla at facilisis est, vel condimentum
+                            ligula. Mauris volutpat vitae risus sed pellentesque. Praesent fermrntum neque ac tellus gravida, at varius sem accumsan. Nam porta erat id sapien consectetur. Fusce sed purus</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="flex-centering">
+                            <img class="clients__img auto-margin" src="images/Img_client.png" alt="">
+                            <h4 class="premuim-heading">John Doe</h4>
+                            <h5 class="heading-quaternary clients__position small-bpadding">Head of PR Departament</h5>
+                            <img class="clients__quote auto-margin" src="images/quotes.png" alt="">
+                            <p class="clients__talk">Praesent metus urna, feugiat a placerat vel, elementum at leo. Quisque vel fermentum ipsum. Nulla at facilisis est, vel
+                                condimentum ligula. Mauris volutpat vitae risus sed pellentesque. Praesent fermrntum neque ac tellus gravida, at
+                                varius sem accumsan. Nam porta erat id sapien consectetur. Fusce sed purus</p>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="flex-centering">
+                            <img class="clients__img auto-margin" src="images/Img_client.png" alt="">
+                            <h4 class="premuim-heading">John Doe</h4>
+                            <h5 class="heading-quaternary clients__position small-bpadding">Head of PR Departament</h5>
+                            <img class="clients__quote auto-margin" src="images/quotes.png" alt="">
+                            <p class="clients__talk">Praesent metus urna, feugiat a placerat vel, elementum at leo. Quisque vel fermentum ipsum. Nulla at facilisis est, vel
+                                condimentum ligula. Mauris volutpat vitae risus sed pellentesque. Praesent fermrntum neque ac tellus gravida, at
+                                varius sem accumsan. Nam porta erat id sapien consectetur. Fusce sed purus</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="logo">
+        <div class="container small-padding text-center">
+            <div class="logo__img">
+                <div class="col-md-2 col-sm-6">
+                    <img class="img-fluid" src="images/Logo1.png" alt="Logo" />
+                </div>
+                <div class="col-md-2 col-sm-6">
+                    <img class="img-fluid" src="images/Logo2.png" alt="Logo" />
+                </div>
+                <div class="col-md-2 col-sm-6">
+                    <img class="img-fluid" src="images/Logo3.png" alt="Logo" />
+                </div>
+                <div class="col-md-2 col-sm-6">
+                    <img class="img-fluid" src="images/Logo4.png" alt="Logo" />
+                </div>
+                <div class="col-md-2 col-sm-6">
+                    <img class="img-fluid" src="images/Logo5.png" alt="Logo" />
+                </div>
+                <div class="col-md-2 col-sm-6">
+                    <img class="img-fluid" src="images/Logo6.png" alt="Logo" />
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="price medium-padding">
+        <div class="container">
+            <h2 class="heading-secondary">
+                <span class="heading-secondary--main">Price</span>
+                <span class="heading-secondary--sub">Pricing table</span>
+            </h2>
+            <div class="price__box">
+                <div class="price__box--element">
+                    <h4 class="heading-quaternary">express</h4>
+                    <div class="amount">
+                        <span class="amount__number">$9.99</span>
+                        <span class="amount__month">/ month</span>
+                    </div>
+                    <ul class="benefits">
+                        <li>Tracking issues</li>
+                        <li>Add bugs throught email</li>
+                        <li>Notifications</li>
+                        <li>Time tracking</li>
+                        <li>Custom views</li>
+                    </ul>
+                    <div class="button">
+                        <a href="#" class="btn flex-centering">choose</a>
+                    </div>
+                </div>
+                <div class="price__box--element">
+                    <h4 class="heading-quaternary">standard</h4>
+                    <div class="amount">
+                        <span class="amount__number">$14.99</span>
+                        <span class="amount__month">/ month</span>
+                    </div>
+                    <ul class="benefits">
+                        <li>Tracking issues</li>
+                        <li>Add bugs throught email</li>
+                        <li>Notifications</li>
+                        <li>Time tracking</li>
+                        <li>Custom views</li>
+                    </ul>
+                    <div class="button">
+                        <a href="#" class="btn flex-centering">choose</a>
+                    </div>
+                </div>
+                <div class="price__box--element">
+                    <h4 class="heading-quaternary">luxe</h4>
+                    <div class="amount">
+                        <span class="amount__number">$19.99</span>
+                        <span class="amount__month">/ month</span>
+                    </div>
+                    <ul class="benefits">
+                        <li>Tracking issues</li>
+                        <li>Add bugs throught email</li>
+                        <li>Notifications</li>
+                        <li>Time tracking</li>
+                        <li>Custom views</li>
+                    </ul>
+                    <div class="button">
+                        <a href="#" class="btn flex-centering">choose</a>
+                    </div>
+                </div>
+                <div class="price__box--element">
+                    <h4 class="heading-quaternary">premium</h4>
+                    <div class="amount">
+                        <span class="amount__number">$24.99</span>
+                        <span class="amount__month">/ month</span>
+                    </div>
+                    <ul class="benefits">
+                        <li>Tracking issues</li>
+                        <li>Add bugs throught email</li>
+                        <li>Notifications</li>
+                        <li>Time tracking</li>
+                        <li>Custom views</li>
+                    </ul>
+                    <div class="button">
+                        <a href="#" class="btn flex-centering">choose</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="premium">
+        <div class="container medium-padding">
+            <h2 class="heading-secondary">
+                <span class="heading-secondary--main">premium</span>
+                <span class="heading-secondary--sub">even more features available</span>
+            </h2>
+            <div id="premiumIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#premiumIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#premiumIndicators" data-slide-to="1"></li>
+                    <li data-target="#premiumIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row premium__box">
+                            <div class="col-md-6 col-sm-12">
+                                <img class="img-fluid" src="images/Img.png" alt="">
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="media">
+                                    <img class="mr-3" src="images/icon.png" alt="Generic placeholder image">
+                                    <div class="media-body">
+                                        <h5 class="mt-0 premuim-heading">first feature</h5>
+                                        <p class="premium__box--text">Preaset metus urna, feugiat a placerat vel, elementum at leo. Quiskuevel fermentum ipsum. Nulla at facilisis est.</p>
+                                        <ul class="premium__box--list">
+                                            <li>feature one</li>
+                                            <li>feature two</li>
+                                            <li>feature three</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <img class="mr-3" src="images/icon.png" alt="Generic placeholder image">
+                                    <div class="media-body">
+                                        <h5 class="mt-0 premuim-heading">second feature</h5>
+                                        <p class="premium__box--text">Preaset metus urna, feugiat a placerat vel.</p>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <img class="mr-3" src="images/icon.png" alt="Generic placeholder image">
+                                    <div class="media-body">
+                                        <h5 class="mt-0 premuim-heading">third feature</h5>
+                                        <p class="premium__box--text">Preaset metus urna, feugiat a placerat vel, elementum at leo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row premium__box">
+                            <div class="col-md-6 col-sm-12">
+                                <img class="img-fluid" src="images/Img.png" alt="">
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="media">
+                                    <img class="mr-3" src="images/icon.png" alt="Generic placeholder image">
+                                    <div class="media-body">
+                                        <h5 class="mt-0 premuim-heading">first feature</h5>
+                                        <p class="premium__box--text">Preaset metus urna, feugiat a placerat vel, elementum at leo. Quiskuevel fermentum ipsum. Nulla at facilisis est.</p>
+                                        <ul class="premium__box--list">
+                                            <li>feature one</li>
+                                            <li>feature two</li>
+                                            <li>feature three</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <img class="mr-3" src="images/icon.png" alt="Generic placeholder image">
+                                    <div class="media-body">
+                                        <h5 class="mt-0 premuim-heading">second feature</h5>
+                                        <p class="premium__box--text">Preaset metus urna, feugiat a placerat vel.</p>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <img class="mr-3" src="images/icon.png" alt="Generic placeholder image">
+                                    <div class="media-body">
+                                        <h5 class="mt-0 premuim-heading">third feature</h5>
+                                        <p class="premium__box--text">Preaset metus urna, feugiat a placerat vel, elementum at leo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row premium__box">
+                            <div class="col-md-6 col-sm-12">
+                                <img class="img-fluid" src="images/Img.png" alt="">
+                            </div>
+                            <div class="col-md-6 col-sm-12">
+                                <div class="media">
+                                    <img class="mr-3" src="images/icon.png" alt="Generic placeholder image">
+                                    <div class="media-body">
+                                        <h5 class="mt-0 premuim-heading">first feature</h5>
+                                        <p class="premium__box--text">Preaset metus urna, feugiat a placerat vel, elementum at leo. Quiskuevel fermentum ipsum. Nulla at facilisis est.</p>
+                                        <ul class="premium__box--list">
+                                            <li>feature one</li>
+                                            <li>feature two</li>
+                                            <li>feature three</li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <img class="mr-3" src="images/icon.png" alt="Generic placeholder image">
+                                    <div class="media-body">
+                                        <h5 class="mt-0 premuim-heading">second feature</h5>
+                                        <p class="premium__box--text">Preaset metus urna, feugiat a placerat vel.</p>
+                                    </div>
+                                </div>
+                                <div class="media">
+                                    <img class="mr-3" src="images/icon.png" alt="Generic placeholder image">
+                                    <div class="media-body">
+                                        <h5 class="mt-0 premuim-heading">third feature</h5>
+                                        <p class="premium__box--text">Preaset metus urna, feugiat a placerat vel, elementum at leo.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="button small-padding">
+                <button class="btn">get in touch</button>
+            </div>
+        </div>
+    </section>
+    <section class="facts" id="facts">
+        <div class="container medium-padding text-center">
+            <h2 class="heading-secondary">
+                <span class="heading-secondary--main">some facts</span>
+                <span class="heading-secondary--sub">about our work</span>
+            </h2>
+            <div class="row">
+                <div class="col-md-3 col-sm-12">
+                    <div class="facts__number">
+                        <span class="count1"></span>
+                    </div>
+                    <h3 class="facts__title">design projects released</h3>
+                    <p class="facts__text">Praesent metus urna, feugiata placerat elementum at leo</p>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <div class="facts__number">
+                        <span class="count2"></span>
+                    </div>
+                    <h3 class="facts__title">photos</h3>
+                    <p class="facts__text">Praesent metus urna, feugiata placerat elementum at leo</p>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <div class="facts__number">
+                        <span class="count3"></span>
+                    </div>
+                    <h3 class="facts__title">marketing ideas</h3>
+                    <p class="facts__text">Praesent metus urna, feugiata placerat elementum at leo</p>
+                </div>
+                <div class="col-md-3 col-sm-12">
+                    <div class="facts__number">
+                        <span class="count4"></span>
+                    </div>
+                    <h3 class="facts__title">exibitions</h3>
+                    <p class="facts__text">Praesent metus urna, feugiata placerat elementum at leo</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="share">
+        <div class="container small-padding">
+            <div class="share__box">
+                    <div class="share__box--tell">
+                        <i class="icon-share img-fluid"></i>
+                        <span class="tell-share">tell about us:</span>
+                    </div>
+                    <div class="share__box--icon">
+                        <a class="socialicon" href="#">
+                            <i class="icon-twitter"></i>
+                        </a>
+                        <span class="number">152</span>
+                        <a class="socialicon" href="#">
+                            <i class="icon-linkedin-1"></i>
+                        </a>
+                        <span class="number">31</span>
+                        <a class="socialicon" href="#">
+                            <i class="icon-facebook"></i>
+                        </a>
+                        <span class="number">168</span>
+                        <a class="socialicon" href="#">
+                            <i class="icon-gplus"></i>
+                        </a>
+                        <span class="number">22</span>
+                        <a class="socialicon" href="#">
+                            <i class="icon-pinterest"></i>
+                        </a>
+                        <span class="number">165</span>
+                    </div>
+            </div>
+        </div>
+    </section>
+    <section class="contact">
+        <div class="container medium-padding">
+			<h2 class="heading-secondary">
+				<span class="heading-secondary--main">contact us</span>
+				<span class="heading-secondary--sub">our agency located in Melbourne, Australia</span>
+			</h2>
+			<div class="contact__form">
+				<form>
+					<div class="form-row">
+				    	<div class="col-md-6 col-sm-12">
+				     		<input type="text" class="form-control" placeholder="Name">
+				    	</div>
+				 		<div class="col-md-6 col-sm-12">
+				    		<input type="email" class="form-control" placeholder="Email">
+				  		</div>
+				  		<div class="col-md-12 medium-bpadding">
+				    		<input type="text" class="form-control" placeholder="Subject">
+				  		</div>
+						<div class="col-md-12">
+					   		<input type="text" class="form-control" placeholder="Message"></input>
+				  		</div>
+					</div>
+                </form>
+    			<div class="button small-padding">
+					<button class="btn">send message</button>
+				</div>
+			</div>
+		</div>
+		
+		<div class="apimaps" id="map">
+		
+		</div>
+		
+		<div class="contact__map">
+			<div class="map">
+				<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d8915.729576861964!2d144.97169448983578!3d-37.809100685790604!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spl!2spl!4v1516708795590" width="100%" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+			</div>
+			<div class="adress">
+				PO Box 16112 Collins Street Vest Victoria 8007 Australia
+				121 King Street, Melbourne Victoria 3000 Australia
+				+00 0 1234 5678
+				bukindesign@gmail.com
+				www.envato.com
+			</div>
+		</div>
+    </section>
+    <footer class="footer small-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4 col-sm-12 flex-spaceb">
+                    <div class="footer__socjals">
+                        <a class="footer__socjals--icon socialicon" href="#">
+                            <i class="icon-twitter"></i>
+                        </a>
+                        <a class="footer__socjals--icon socialicon" href="#">
+                            <i class="icon-instagram"></i>
+                        </a>
+                        <a class="footer__socjals--icon socialicon" href="#">
+                            <i class="icon-linkedin-1"></i>
+                        </a>
+                        <a class="footer__socjals--icon socialicon" href="#">
+                            <i class="icon-facebook"></i>
+                        </a>
+                        <a class="footer__socjals--icon socialicon" href="#">
+                            <i class="icon-youtube"></i>
+                        </a>
+                        <a class="footer__socjals--icon socialicon" href="#">
+                            <i class="icon-gplus"></i>
+                        </a>
+                        <a class="footer__socjals--icon socialicon" href="#">
+                            <i class="icon-dot-3"></i>
+                        </a>
+                    </div>
+                    <p class="footer__brand">awax &copy; 2016</p>
+                </div>
+                <div class="col-md-4 col-sm-12">
+                    <p class="footer__text">Nulla iaculis enim a magna tempor congue. Sed aliquam dignissim hendrerit. Duis erat nulla, pellentesque at enim in, scelerisque placerat nunc. Nulla vestibulum ex sed neque auctor rutrum. Donec fringilla tincidunt aliquet. Nullum rhoncus urna massa, vulputate congue velit pulvinar suscipit. Mauris laoreet blandit pharetra. Suspendisse rutrum dolor at augue convallis, eget dapibus nunc consequat. Sed diam nulla, elementum non laoreet eu, vulputate urna, at pellentesque risus orci in ante.</p>
+                </div>
+                <div class="col-md-4 col-sm-12 auto-margin flex-centering footer__form">
+                    <form>
+                        <div class="col-md-12">
+                            <div class="form-row">
+                                <input type="text" class="form-control" placeholder="Email to subscribe"></input>
+                            </div>
+                        </div>
+                    </form>
+                    <div class="button small-padding">
+                        <button class="btn">subscribe</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.3/js/bootstrap.min.js" integrity="sha384-a5N7Y/aK3qNeh15eJKGWxsqtnX/wWdSZSKp+81YjTmS15nvnvxKHuzaWwXHDli+4"
+        crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-countto/1.2.0/jquery.countTo.js"></script>
+    <script src="script.js"></script>
+
+</body>
+
+</html>
