@@ -52,7 +52,6 @@ body
     &__back
         height: 85vh
         &--img
-            background-color: $dark-color
             background-position: center
             background-size: cover
             height: 85vh
@@ -75,18 +74,11 @@ body
         .button
             animation-delay: 1.1s
 
-.phone 
-	&__button 
-        z-index: 1000
-        border-radius: 50%
-        background-color: $gold-color
-        box-shadow: 1px 3px 8px 0px rgba($black-color, 0.24)
-        width: 6.5rem
-        height: 6.5rem
-        cursor: pointer
-        position: fixed
-        bottom: 50px
-        right: 50px
+.scrollup
+    visibility: hidden
+    .fixed-button
+        left: 50px
+        line-height: 6rem
 
 .about 
     background-color: $lightblue-color
@@ -165,6 +157,26 @@ body
                 &:hover
                     .project__card--hover
                         display: flex
+
+.team
+    background-image: url('images/team_image.png')
+    background-position: center
+    background-size: cover
+    .heading-secondary
+        &--main
+            color: $white-color
+    &__worker
+        display: inline-block
+        width: 32rem
+        background-color: $white-color
+        margin: 0 1rem 6.5rem
+        padding: 5rem 1rem
+        &--socials
+            .socialicon
+                background-color: $share-color
+                &:hover
+                    background-color: $gold-color
+                
 
 .clients
     background-color: $lightblue-color

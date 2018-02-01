@@ -85,7 +85,7 @@
         </div>
     </header>
     <div class="phone">
-		<button type="button" class="phone__button animate-pulse" data-toggle="modal" data-target="#phoneModal"><img src="images/Telephone.png" alt="telephone"/></button>
+		<button type="button" class="fixed-button animate-pulse" data-toggle="modal" data-target="#phoneModal"><img src="images/Telephone.png" alt="telephone"/></button>
 		<div class="modal fade" id="phoneModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
 			<div class="modal-dialog" role="document">
     			<div class="modal-content">
@@ -107,7 +107,12 @@
     			</div>
   			</div>
 		</div>
-	</div>
+    </div>
+    <div class="scrollup">
+        <a href="#" class="fixed-button text-center">
+            <img src="images/ScrollUp.png" alt="">
+        </a>
+    </div>
     <section class="about">
         <div class="container medium-padding">
             <h2 class="heading-secondary">
@@ -126,7 +131,7 @@
                     </div>
                 </div>
                 <div class="col-md-6 col-sm-12">
-                    <video class="about__video" width="100%" height="100%" poster="images/Video.png" preload="none" onclick="this.play();">
+                    <video class="about__video" width="100%" height="auto" poster="images/Video.png" preload="none" onclick="this.play();">
                         <source src="/videos/Keyboard.mp4" type="video/mp4"> Sorry! Your browser does not support the video tag.
                     </video>
                 </div>
@@ -379,17 +384,277 @@
             </div>
         </div>
     </section>
-    <section class="team">
+    <section class="team medium-padding">
         <div class="container">
-            <div class="row">
-                <div class="col-md-4 cols-sm-12">
-    
-                </div>
-                <div class="col-md-4 cols-sm-12">
-    
-                </div>
-                <div class="col-md-4 cols-sm-12">
-    
+            <h2 class="heading-secondary">
+                <span class="heading-secondary--main">Our team</span>
+                <span class="heading-secondary--sub">Our co-workers</span>
+            </h2>
+            <div id="teamIndicators" class="carousel slide" data-ride="carousel">
+                <ol class="carousel-indicators">
+                    <li data-target="#teamIndicators" data-slide-to="0" class="active"></li>
+                    <li data-target="#teamIndicators" data-slide-to="1"></li>
+                    <li data-target="#teamIndicators" data-slide-to="2"></li>
+                </ol>
+                <div class="carousel-inner text-center">
+                    <div class="carousel-item active">
+                            <div class="team__worker">
+                                <img class="clients__img auto-margin" src="images/Img_team_1.png" alt="">
+                                <h4 class="premuim-heading">Jane Doe</h4>
+                                <h5 class="heading-quaternary clients__position small-bpadding">Master mind</h5>
+                                <div class="team__worker--socials">
+                                    <a class="socialicon" href="#">
+                                        <i class="icon-twitter"></i>
+                                    </a>
+                                    <a class="socialicon" href="#">
+                                        <i class="icon-instagram"></i>
+                                    </a>
+                                    <a class="socialicon" href="#">
+                                        <i class="icon-linkedin-1"></i>
+                                    </a>
+                                    <a class="socialicon" href="#">
+                                        <i class="icon-facebook"></i>
+                                    </a>
+                                    <a class="socialicon" href="#">
+                                        <i class="icon-youtube"></i>
+                                    </a>
+                                    <a class="socialicon" href="#">
+                                        <i class="icon-gplus"></i>
+                                    </a>
+                                    <a class="socialicon" href="#">
+                                        <i class="icon-dot-3"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="team__worker">
+                                <img class="clients__img auto-margin" src="images/Img_team_2.png" alt="">
+                                <h4 class="premuim-heading">Mike Schiller</h4>
+                                <h5 class="heading-quaternary clients__position small-bpadding">Creative head</h5>
+                                <div class="team__worker--socials">
+                                    <a class="socialicon" href="#">
+                                        <i class="icon-twitter"></i>
+                                    </a>
+                                    <a class="socialicon" href="#">
+                                        <i class="icon-instagram"></i>
+                                    </a>
+                                    <a class="socialicon" href="#">
+                                        <i class="icon-linkedin-1"></i>
+                                    </a>
+                                    <a class="socialicon" href="#">
+                                        <i class="icon-facebook"></i>
+                                    </a>
+                                    <a class="socialicon" href="#">
+                                        <i class="icon-youtube"></i>
+                                    </a>
+                                    <a class="socialicon" href="#">
+                                        <i class="icon-gplus"></i>
+                                    </a>
+                                    <a class="socialicon" href="#">
+                                        <i class="icon-dot-3"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="team__worker">
+                                <img class="clients__img auto-margin" src="images/Img_team_3.png" alt="">
+                                <h4 class="premuim-heading">Anna Johnes</h4>
+                                <h5 class="heading-quaternary clients__position small-bpadding">Technical lead</h5>
+                                <div class="team__worker--socials">
+                                    <a class="socialicon" href="#">
+                                        <i class="icon-twitter"></i>
+                                    </a>
+                                    <a class="socialicon" href="#">
+                                        <i class="icon-instagram"></i>
+                                    </a>
+                                    <a class="socialicon" href="#">
+                                        <i class="icon-linkedin-1"></i>
+                                    </a>
+                                    <a class="socialicon" href="#">
+                                        <i class="icon-facebook"></i>
+                                    </a>
+                                    <a class="socialicon" href="#">
+                                        <i class="icon-youtube"></i>
+                                    </a>
+                                    <a class="socialicon" href="#">
+                                        <i class="icon-gplus"></i>
+                                    </a>
+                                    <a class="socialicon" href="#">
+                                        <i class="icon-dot-3"></i>
+                                    </a>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="team__worker">
+                            <img class="clients__img auto-margin" src="images/Img_team_1.png" alt="">
+                            <h4 class="premuim-heading">Jane Doe</h4>
+                            <h5 class="heading-quaternary clients__position small-bpadding">Master mind</h5>
+                            <div class="team__worker--socials">
+                                <a class="socialicon" href="#">
+                                    <i class="icon-twitter"></i>
+                                </a>
+                                <a class="socialicon" href="#">
+                                    <i class="icon-instagram"></i>
+                                </a>
+                                <a class="socialicon" href="#">
+                                    <i class="icon-linkedin-1"></i>
+                                </a>
+                                <a class="socialicon" href="#">
+                                    <i class="icon-facebook"></i>
+                                </a>
+                                <a class="socialicon" href="#">
+                                    <i class="icon-youtube"></i>
+                                </a>
+                                <a class="socialicon" href="#">
+                                    <i class="icon-gplus"></i>
+                                </a>
+                                <a class="socialicon" href="#">
+                                    <i class="icon-dot-3"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="team__worker">
+                            <img class="clients__img auto-margin" src="images/Img_team_2.png" alt="">
+                            <h4 class="premuim-heading">Mike Schiller</h4>
+                            <h5 class="heading-quaternary clients__position small-bpadding">Creative head</h5>
+                            <div class="team__worker--socials">
+                                <a class="socialicon" href="#">
+                                    <i class="icon-twitter"></i>
+                                </a>
+                                <a class="socialicon" href="#">
+                                    <i class="icon-instagram"></i>
+                                </a>
+                                <a class="socialicon" href="#">
+                                    <i class="icon-linkedin-1"></i>
+                                </a>
+                                <a class="socialicon" href="#">
+                                    <i class="icon-facebook"></i>
+                                </a>
+                                <a class="socialicon" href="#">
+                                    <i class="icon-youtube"></i>
+                                </a>
+                                <a class="socialicon" href="#">
+                                    <i class="icon-gplus"></i>
+                                </a>
+                                <a class="socialicon" href="#">
+                                    <i class="icon-dot-3"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="team__worker">
+                            <img class="clients__img auto-margin" src="images/Img_team_3.png" alt="">
+                            <h4 class="premuim-heading">Anna Johnes</h4>
+                            <h5 class="heading-quaternary clients__position small-bpadding">Technical lead</h5>
+                            <div class="team__worker--socials">
+                                <a class="socialicon" href="#">
+                                    <i class="icon-twitter"></i>
+                                </a>
+                                <a class="socialicon" href="#">
+                                    <i class="icon-instagram"></i>
+                                </a>
+                                <a class="socialicon" href="#">
+                                    <i class="icon-linkedin-1"></i>
+                                </a>
+                                <a class="socialicon" href="#">
+                                    <i class="icon-facebook"></i>
+                                </a>
+                                <a class="socialicon" href="#">
+                                    <i class="icon-youtube"></i>
+                                </a>
+                                <a class="socialicon" href="#">
+                                    <i class="icon-gplus"></i>
+                                </a>
+                                <a class="socialicon" href="#">
+                                    <i class="icon-dot-3"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="team__worker">
+                            <img class="clients__img auto-margin" src="images/Img_team_1.png" alt="">
+                            <h4 class="premuim-heading">Jane Doe</h4>
+                            <h5 class="heading-quaternary clients__position small-bpadding">Master mind</h5>
+                            <div class="team__worker--socials">
+                                <a class="socialicon" href="#">
+                                    <i class="icon-twitter"></i>
+                                </a>
+                                <a class="socialicon" href="#">
+                                    <i class="icon-instagram"></i>
+                                </a>
+                                <a class="socialicon" href="#">
+                                    <i class="icon-linkedin-1"></i>
+                                </a>
+                                <a class="socialicon" href="#">
+                                    <i class="icon-facebook"></i>
+                                </a>
+                                <a class="socialicon" href="#">
+                                    <i class="icon-youtube"></i>
+                                </a>
+                                <a class="socialicon" href="#">
+                                    <i class="icon-gplus"></i>
+                                </a>
+                                <a class="socialicon" href="#">
+                                    <i class="icon-dot-3"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="team__worker">
+                            <img class="clients__img auto-margin" src="images/Img_team_2.png" alt="">
+                            <h4 class="premuim-heading">Mike Schiller</h4>
+                            <h5 class="heading-quaternary clients__position small-bpadding">Creative head</h5>
+                            <div class="team__worker--socials">
+                                <a class="socialicon" href="#">
+                                    <i class="icon-twitter"></i>
+                                </a>
+                                <a class="socialicon" href="#">
+                                    <i class="icon-instagram"></i>
+                                </a>
+                                <a class="socialicon" href="#">
+                                    <i class="icon-linkedin-1"></i>
+                                </a>
+                                <a class="socialicon" href="#">
+                                    <i class="icon-facebook"></i>
+                                </a>
+                                <a class="socialicon" href="#">
+                                    <i class="icon-youtube"></i>
+                                </a>
+                                <a class="socialicon" href="#">
+                                    <i class="icon-gplus"></i>
+                                </a>
+                                <a class="socialicon" href="#">
+                                    <i class="icon-dot-3"></i>
+                                </a>
+                            </div>
+                        </div>
+                        <div class="team__worker">
+                            <img class="clients__img auto-margin" src="images/Img_team_3.png" alt="">
+                            <h4 class="premuim-heading">Anna Johnes</h4>
+                            <h5 class="heading-quaternary clients__position small-bpadding">Technical lead</h5>
+                            <div class="team__worker--socials">
+                                <a class="socialicon" href="#">
+                                    <i class="icon-twitter"></i>
+                                </a>
+                                <a class="socialicon" href="#">
+                                    <i class="icon-instagram"></i>
+                                </a>
+                                <a class="socialicon" href="#">
+                                    <i class="icon-linkedin-1"></i>
+                                </a>
+                                <a class="socialicon" href="#">
+                                    <i class="icon-facebook"></i>
+                                </a>
+                                <a class="socialicon" href="#">
+                                    <i class="icon-youtube"></i>
+                                </a>
+                                <a class="socialicon" href="#">
+                                    <i class="icon-gplus"></i>
+                                </a>
+                                <a class="socialicon" href="#">
+                                    <i class="icon-dot-3"></i>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
