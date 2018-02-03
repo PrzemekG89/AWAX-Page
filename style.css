@@ -404,7 +404,7 @@ body {
     font-size: 1.4rem;
     font-weight: 300;
     line-height: 2.5rem;
-    padding: 2rem 5rem 6rem; }
+    padding: 2rem 1rem 6rem; }
   .clients .premuim-heading {
     text-transform: none; }
 
@@ -575,8 +575,19 @@ body {
       width: 40%;
       background-color: #ffffff;
       position: absolute;
-      top: 20px;
-      right: 50%; }
+      top: 3rem;
+      right: 50%;
+      height: 85%;
+      justify-content: space-around;
+      padding: 5rem 4rem; }
+      .contact__map .adress__img {
+        background-color: #aeaeae;
+        display: inline-block;
+        margin-right: .5rem;
+        width: 3.5rem;
+        border-radius: 50%;
+        height: 3.5rem;
+        line-height: 3.5rem; }
 
 .footer__socjals--icon {
   background-color: rgba(255, 255, 255, 0.2); }

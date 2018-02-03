@@ -1,4 +1,5 @@
 $(window).ready(function () {
+
     $(document).scroll(function() {
         var scrollTop = $(window).scrollTop(),
             elementOffset = $('#facts').offset().top,
