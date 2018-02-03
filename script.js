@@ -1,11 +1,11 @@
-
 $(window).ready(function () {
     $(document).scroll(function() {
         var scrollTop = $(window).scrollTop(),
             elementOffset = $('#facts').offset().top,
             distance = (elementOffset - scrollTop);
+            console.log(distance);
 
-        if (distance = 50) {
+        if (distance = 500) {
             $('.count1').countTo({
                 from: 0,
                 to: 1000,
