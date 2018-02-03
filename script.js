@@ -1,24 +1,11 @@
-$(document).ready(function () {
-    $('a').click(function () {
-        if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
-            location.hostname == this.hostname) {
-            var $target = $(this.hash);
-            $target = $target.length && $target ||
-                $('[name=' + this.hash.slice(1) + ']');
-            if ($target.length) {
-                var targetOffset = $target.offset().top;
-                $('html,body')
-                    .animate({
-                        scrollTop: targetOffset
-                    }, 1000);
-                return false;
-            }
-        }
-    });
-});
-
 
 $(window).ready(function () {
+    $(document).scroll(function() {
+        var scrollTop = $(window).scrollTop(),
+            elementOffset = $('#facts').offset().top,
+            distance = (elementOffset - scrollTop);
+
+        if (distance = 50) {
             $('.count1').countTo({
                 from: 0,
                 to: 1000,
@@ -43,7 +30,9 @@ $(window).ready(function () {
                 speed: 3000,
                 refreshInterval: 80
             });
-})
+        }
+    })
+});
 
 $(document).ready(function() {
     let scrollY = 0;

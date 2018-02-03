@@ -122,14 +122,16 @@ body
             color: $black-color
             font-size: 1.4rem
             font-weight: 300
-            width: 65rem
+            max-width: 60rem
+            display: flex
+            justify-content: center
             .nav-item
                 padding: 0 .5rem
                 &:not(:last-child)
                     border-right: 1px solid $lightgrey-color
                 .nav-link
                     color: $black-color
-                    padding: 0 2rem
+                    padding: 0 1.5rem
                 .active
                     border-bottom: .5rem solid $gold-color
                     background-color: transparent 
@@ -167,7 +169,8 @@ body
             color: $white-color
     &__worker
         display: inline-block
-        width: 32rem
+        max-width: 32rem
+        width: 100%
         background-color: $white-color
         margin: 0 1rem 6.5rem
         padding: 5rem 1rem
@@ -194,7 +197,7 @@ body
         font-size: 1.4rem
         font-weight: 300
         line-height: 2.5rem
-        padding: 2rem 8rem 6rem
+        padding: 2rem 5rem 6rem
     .premuim-heading
         text-transform: none
 .logo
@@ -345,6 +348,7 @@ body
                 font-size: 1rem
                 font-weight: 700
                 line-height: 2.5rem
+
 
 .contact
     background-color: $mediumblue-color
