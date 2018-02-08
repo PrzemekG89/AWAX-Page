@@ -262,21 +262,21 @@ body {
       .header .navbar .nav-item .nav-link:hover {
         border-bottom: 0.5rem solid #b88b58;
         color: #f7f7f7; }
-  .header__back {
-    height: 55rem; }
-    .header__back--img {
-      background-position: center;
-      background-size: cover;
-      height: 85vh; }
-      .header__back--img:first-child {
-        background-image: url("images/Back1.png"); }
-      .header__back--img:nth-child(2) {
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/Back2.png"); }
-      .header__back--img:last-child {
-        background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/Back3.png"); }
+  .header__back--img {
+    background-position: center;
+    background-size: cover;
+    height: 85vh; }
+    .header__back--img:first-child {
+      background-image: url("images/Back1.png"); }
+    .header__back--img:nth-child(2) {
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/Back2.png"); }
+    .header__back--img:last-child {
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("images/Back3.png"); }
   .header__main {
-    margin-top: -55rem;
-    height: 54rem; }
+    height: 85vh;
+    position: absolute;
+    top: 11rem;
+    left: 10%; }
     .header__main .number {
       text-transform: uppercase;
       color: #ffffff;

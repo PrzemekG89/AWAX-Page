@@ -50,7 +50,6 @@ body
                     border-bottom: .5rem solid $gold-color
                     color: $lightblue-color
     &__back
-        height: 55rem
         &--img
             background-position: center
             background-size: cover
@@ -61,10 +60,11 @@ body
                 background-image: linear-gradient(to right, rgba($black-color, 0.7), rgba($black-color, 0.7)), url("images/Back2.png")
             &:last-child
                 background-image: linear-gradient(to right, rgba($black-color, 0.7), rgba($black-color, 0.7)), url("images/Back3.png")
-
     &__main
-        margin-top: -55rem
-        height: 54rem
+        height: 85vh
+        position: absolute
+        top: 11rem
+        left: 10%
         .number
             text-transform: uppercase
             color: $white-color
@@ -182,7 +182,6 @@ body
                 &:hover
                     background-color: $gold-color
                 
-
 .clients
     background-color: $lightblue-color
     &__img
@@ -281,9 +280,6 @@ body
                 margin-left: -2rem
                 position: absolute
 
-        
-
-
 .facts
     position: relative
     .heading-secondary
@@ -350,7 +346,6 @@ body
                 font-size: 1rem
                 font-weight: 700
                 line-height: 2.5rem
-
 
 .contact
     background-color: $mediumblue-color
